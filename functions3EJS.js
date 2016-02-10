@@ -139,6 +139,22 @@ number of symbols to the string, result.
 */
 
 
+/* FUNCTIONS AS VALUES */
+
+var launchMissiles = function(value) {
+  missileSystem.launch('now');
+};
+if (safeMode)
+launchMissiles = function(value) {/* do nothing*/};
+
+/* In the previous code, line 148 assigns the variable launchMissiles
+a new function definition.*/
+
+
+
+
+
+
 
 
 
